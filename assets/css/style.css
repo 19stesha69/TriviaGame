@@ -1,0 +1,36 @@
+body {
+    background-color: cornflowerblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#backGround {
+    background-color: pink;
+    width: 80%;
+    height:80%; 
+    margin: auto;
+    margin-top: 30px;
+}
+
+#gameTitle {
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    top: 200px;
+    left: 45%;
+    border: none;
+}
+
+#playGround {
+    height: 100%;
+}
+

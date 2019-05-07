@@ -1,0 +1,119 @@
+<!DOCTYPE html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timed Trivia Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="backGround"> <!--Start Page-->
+
+            <div id="gameTitle"><h1>Some Kind of Trivia</h1></div>
+
+            <button id="start" type="button">START!</button> <!--Start Button-->  
+
+            <div id="playGround">  <!--Div containing the quiz-->
+
+                <h4>1. Who's the youngest Hobbit in the Fellowship?</h4>
+                <br>
+                <input id="quest" name="quest1" value="incorrect" type="radio">Samwise
+                <input id="quest" name="quest1" value ="incorrect" type="radio">Merry
+                <input id="quest" name="quest1" value="correct" type="radio">Pippin
+                <input id="quest" name="quest1" value="incorrect" type="radio">Frodo
+
+                <br><br>
+                
+                <h4>2. Who tells Théoden that the courtesy of his Golden 
+                    Hall is somewhat lessend of late?</h4>
+                <br>
+                <input id="quest" name="quest2" value ="incorrect" type="radio">Legolas
+                <input id="quest" name="quest2" value ="incorrect" type="radio">Aragorn
+                <input id="quest" name="quest2" value="incorrect" type="radio">Grima Wormtongue
+                <input id="quest" name="quest2" value="correct" type="radio">Gandalf
+
+                <br><br>
+
+                <h4>3. Who's Galadriel speaking of when she says: "The 
+                    young captain of Gondor has but to extend his hand" to 
+                    take the ring?</h4>
+                <br>
+                <input id="quest" name="quest3" value ="correct" type="radio">Faramir
+                <input id="quest" name="quest3" value ="incorrect" type="radio">Gollum
+                <input id="quest" name="quest3" value="incorrect" type="radio">Boromir
+                <input id="quest" name="quest3" value="incorrect" type="radio">Treebeard
+
+                <br><br>
+
+                <h4>4. Which realm called the "Golden Wood" lies 
+                    at the eastern foothills of the Misty Mountains?</h4>
+                <br>
+                <input id="quest" name="quest4" value ="incorrect" type="radio">Rivendell
+                <input id="quest" name="quest4" value ="correct" type="radio">Lothlórien
+                <input id="quest" name="quest4" value="incorrect" type="radio">Moria
+                <input id="quest" name="quest4" value="incorrect" type="radio">Erebor
+
+                <br><br>
+
+                <h4>5. Who claims to be Frodo's once-removed second cousin 
+                    on his mother's side and a twice-removed third cousin on 
+                    his father's side?</h4>
+                <br>
+                <input id="quest" name="quest5" value ="incorrect" type="radio">Rivendell
+                <input id="quest" name="quest5"  value ="correct" type="radio">Lothlórien
+                <input id="quest" name="quest5" value="incorrect" type="radio">Moria
+                <input id="quest" name="quest5" value="correct" type="radio">Pippin
+
+                <br><br>
+
+                <h4>6. What is the name of the Dark Lord Sauron's fortress?</h4>
+                <br>
+                <input id="quest" name="quest6" value ="incorrect" type="radio">Mordor
+                <input id="quest" name="quest6" value ="incorrect" type="radio">Morannon
+                <input id="quest" name="quest6" value="correct" type="radio">Barad-dûr
+                <input id="quest" name="quest6" value="incorrect" type="radio">Osgiliath
+
+                <br><br>
+
+                <h4>7. What does Bilbo toss into the air as he enters Bag End 
+                    after sneaking away from his 111th birthday party?</h4>
+                <br>
+                <input id="quest" name="quest7" value ="correct" type="radio">The One Ring&trade;
+                <input id="quest" name="quest7" value ="incorrect" type="radio">His cares and worries
+                <input id="quest" name="quest7" value="incorrect" type="radio">Lobelia Sackville-Baggins
+                <input id="quest" name="quest7" value="incorrect" type="radio">The three dwarves who are mentioned staying 
+                                                                   at Bag End in the book but were left out of 
+                                                                   the movie.
+
+                <br><br>
+
+                <h4>8. What What meal do Hobbits usually eat between Second Breakfast and Luncheon?</h4>
+                <br>
+                <input id="quest" name="quest8" value ="incorrect" type="radio">Supper
+                <input id="quest" name="quest8" value ="correct" type="radio">Elevenses
+                <input id="quest" name="quest8" value="incorrect" type="radio">Afternoon tea
+                <input id="quest" name="quest8" value="incorrect" type="radio">Dinner
+
+                <br><br>
+
+                <button id="done" type="button">DONE!</button>
+
+            </div>    
+
+            <div id="finished">   <!--Page that shows final score-->
+                <h2>All Done!</h2><br>
+                <h3>How well did you do?</h3><br>
+                <p id="right">Correct Answers:<span id="rightNum"></span></p><br>
+                <p id="wrong">Wrong Answers:<span id="wrongNum"></span></p><br>
+                <div id="gameWellPlayed"></div>
+                <div id="endGameImage"></div>
+            </div>
+
+        </div>    
+
+
+        <script src="assets/javaScript/app.js"></script>
+    </body>
+</html>
