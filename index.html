@@ -6,16 +6,42 @@
         <title>Timed Trivia Game</title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Raleway:400,400i" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
-        <div id="backGround"> <!--Start Page-->
+        <div class="backGround"> <!--Container for all on screen elements-->
 
-            <div id="gameTitle"><h1>Some Kind of Trivia</h1></div>
+            <h1>Lord of the Rings Trivia Game</h1>
 
-            <button id="start" type="button">START!</button> <!--Start Button-->  
+            <div class="titleContainer"> <!--Div containing landing page content-->
+                <div class="titlePage">
+                    <h2>Mae govannen, mellon nín!</h2>
+                    <br><br>
+                    
+                    <img id="gladdy" src="assets/images/galadriel.gif" alt="Galadriel">
+                    
+                    <br><br>
+                    <div id="rules">
+                        <p>Awaiting are 8 questions that will test your knowledge of J.R.R. Tolkien's <span class="lotrItal">The Lord of 
+                            the Rings</span> (as presented in Peter Jackson's adaptation). Answer the questions correctly, 
+                            in the allotted time, and you will be rewarded. Should you fail, however, you will bring about 
+                            the <span class="lotrItal">ruin of all!</span></p>
+                            <br><br>
+                    </div>
 
-            <div id="playGround">  <!--Div containing the quiz-->
+                    <p id="welcome">Welcome friend, and...</p>
+
+                </div>
+
+                <div id="start">
+                    <button class="button" type="button">ENTER!</button> <!--Start Button-->  
+                </div>
+            </div>
+
+            <div class="playGround">  <!--Div containing the quiz-->
+
+                <h3>Time Remaining: <span id="countDown"></span> seconds</h3>
 
                 <h4>1. Who's the youngest Hobbit in the Fellowship?</h4>
                 <br>
@@ -61,9 +87,9 @@
                     on his mother's side and a twice-removed third cousin on 
                     his father's side?</h4>
                 <br>
-                <input id="quest" name="quest5" value ="incorrect" type="radio">Rivendell
-                <input id="quest" name="quest5"  value ="correct" type="radio">Lothlórien
-                <input id="quest" name="quest5" value="incorrect" type="radio">Moria
+                <input id="quest" name="quest5" value ="incorrect" type="radio">Bilbo
+                <input id="quest" name="quest5"  value ="incorrect" type="radio">Arwen
+                <input id="quest" name="quest5" value="incorrect" type="radio">Gollum
                 <input id="quest" name="quest5" value="correct" type="radio">Pippin
 
                 <br><br>
@@ -83,13 +109,13 @@
                 <input id="quest" name="quest7" value ="correct" type="radio">The One Ring&trade;
                 <input id="quest" name="quest7" value ="incorrect" type="radio">His cares and worries
                 <input id="quest" name="quest7" value="incorrect" type="radio">Lobelia Sackville-Baggins
-                <input id="quest" name="quest7" value="incorrect" type="radio">The three dwarves who are mentioned staying 
-                                                                   at Bag End in the book but were left out of 
+                <input id="quest" name="quest7" value="incorrect" type="radio">The three dwarves who are mentioned as 
+                                                                   staying at Bag End in the book but were left out of 
                                                                    the movie.
 
                 <br><br>
 
-                <h4>8. What What meal do Hobbits usually eat between Second Breakfast and Luncheon?</h4>
+                <h4>8. What meal do Hobbits usually eat between Second Breakfast and Luncheon?</h4>
                 <br>
                 <input id="quest" name="quest8" value ="incorrect" type="radio">Supper
                 <input id="quest" name="quest8" value ="correct" type="radio">Elevenses
@@ -98,17 +124,34 @@
 
                 <br><br>
 
-                <button id="done" type="button">DONE!</button>
+                <div id="done">
+                    <button class="button" type="button">DONE!</button>
+                </div>
 
             </div>    
 
-            <div id="finished">   <!--Page that shows final score-->
+            <div class="oops"> <!--Content that appears when time is up-->
+                <h2>Oh dear!</h2>
+                <br>
+                <p>Looks like a trip to the library of Minas Tirith is in order.</p>
+                <br>
+                <img src="assets/images/library.jpg" alt="Gandalf reading in the library at Minas Tirith">
+                <p>Would you like to try again?</p>
+                <div id="reStart">
+                    <button class="button" type="button">Yes!</button> <!--Start Button-->  
+                </div>
+            </div>
+
+            <div class="finished">   <!--Page that shows final score-->
                 <h2>All Done!</h2><br>
                 <h3>How well did you do?</h3><br>
-                <p id="right">Correct Answers:<span id="rightNum"></span></p><br>
-                <p id="wrong">Wrong Answers:<span id="wrongNum"></span></p><br>
+                <p id="right">Correct Answers: <span id="rightNum"></span></p><br>
+                <p id="wrong">Wrong Answers: <span id="wrongNum"></span></p><br>
                 <div id="gameWellPlayed"></div>
                 <div id="endGameImage"></div>
+                <div id="tryAgain">
+                    <button class="button" type="button">Wanna try again?</button>   
+                </div>
             </div>
 
         </div>    

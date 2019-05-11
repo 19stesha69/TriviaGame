@@ -1,4 +1,6 @@
 body {
+    background: url("../images/lothlorien.jpg");
+    background-size: cover;
     background-color: cornflowerblue;
 }
 
@@ -6,31 +8,152 @@ body {
     box-sizing: border-box;
 }
 
-#backGround {
-    background-color: pink;
+.backGround {
+    background-color: #d2e0f9;
     width: 80%;
-    height:80%; 
+    height:auto; 
     margin: auto;
     margin-top: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
-#gameTitle {
+.background h1 {
+    font-size: 4rem;
+    padding-top: 20px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.titlePage {
     text-align: center;
     margin: 20px;
-    font-size: 2em;
+    font-size: 1rem;
 }
 
-button {
-    background-color: purple;
+.titlePage h2 {
+    font-size: 2rem;
+    font-family: 'Averia Serif Libre', cursive;
+    font-style: italic;
+}
+
+#gladdy {
+    height: auto;
+    width: 20%;
+    float: left;
+}
+
+#rules {
+    text-align: left;
+    float: right;
+    width: 75%;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+.lotrItal {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#welcome {
+    clear: both;
+    font-size: 2.5rem;
+    line-height: 2em;
+}
+
+#start {
+    text-align: center;
+}
+
+#start button,
+#done button,
+#reStart button,
+#tryAgain button
+ {
+    background-color: #9e8ff0;
     color: white;
     padding: 15px 30px;
-    position: relative;
-    top: 200px;
-    left: 45%;
     border: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 12px;
 }
 
-#playGround {
-    height: 100%;
+.button {
+    font-family: 'Raleway', sans-serif;
 }
+
+.playGround {
+    background-color: #d2e0f9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.playGround h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.playGround h4 {
+    font-weight: bold;
+}
+
+.oops {
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.oops h2 {
+    font-size: 2rem;
+}
+
+.oops p {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+#done {
+    text-align: center;
+}
+
+.finished {
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.finished h2 {
+    font-size: 2rem;
+}
+
+.finished h3 {
+    font-size: 1.75rem;
+}
+
+.finished p {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+#gameWellPlayed h2 {
+    font-size: 2rem;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#elrondImage {
+    margin: 20px;
+}
+
+#ringwraithsImage {
+    margin: 20px;
+}
+
+
 
