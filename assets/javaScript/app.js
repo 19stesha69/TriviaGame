@@ -3,10 +3,9 @@ $(document).ready(function() {
     //variables
     var rightAnswers = 0; //Number of questions answered correctly
     var wrongAnswers = 0; //Number of questions answered incorrectly
-    var time= 35;         //Number of seconds to be counted down during quiz
+    var time= 60;         //Number of seconds to be counted down during quiz
     var stopTime;         //Timer variable
 
-    //$(".titleContainer").hide();
     $(".playGround").hide();
     $(".finished").hide();
     $(".oops").hide();
@@ -28,8 +27,6 @@ $(document).ready(function() {
         if (time == -1) {
             $(".playGround").hide();
             $(".oops").show();
-            clearTimeout(stopTime);
-            time=36;
         }
 
         time--;
@@ -87,21 +84,13 @@ $(document).ready(function() {
    //Restarts the game after the time runs out
 
    $("#reStart").click(function() {
-        rightAnswers = 0;
-        wrongAnswers = 0;
-        playGame();
+        location.reload();
     });
 
     //Restarts game from .finished div
     
     $("#tryAgain").click(function() {
-        rightAnswers = 0;
-        wrongAnswers = 0;
-        time = 35;
-        $("#ringwraithsImage").detach();
-        $("#elrondImage").detach();
-        $(".finished").hide();
-        playGame();
+        location.reload();
     });
 
 

@@ -155,5 +155,25 @@ body {
     margin: 20px;
 }
 
+/* iPads (portrait) ----------- */
+@media screen and (max-width : 768px) {
+
+    #gladdy {
+        float: none;
+        width: 35%;
+    }
+
+    #rules {
+        float: none;
+        margin: auto;
+    }
+
+    #elrondImage,
+    #ringwraithsImage,
+    #gandalfImage {
+        height: auto;
+        width: 75%;
+    }
+    }
 
 
