@@ -11,7 +11,7 @@ $(document).ready(function() {
     //Function that opens the game
     var playGame = function() {
         console.log(1 + 2);
-        $("#start").hide();
+        $(".titleContainer").hide();
         $("#playGround").show();
     }
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     var wellPlayed = function() {
         if (rightAnswers >= 5) {
-            $('#gameWellPlayed').html("<h2>WELCOME TO RIVENDELL, MR. BAGGINS!</h2>");
+            $('#gameWellPlayed').html("<h2>WELCOME TO RIVENDELL!</h2>");
             $('#endGameImage').append("<img id='elrondImage' src='assets/images/elrond.jpg'>"); 
         } else {
             $('#gameWellPlayed').html("<h2>BEGONE! SERVANT OF THE DARK LORD!</h2>");
