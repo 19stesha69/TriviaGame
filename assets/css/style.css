@@ -22,11 +22,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-<<<<<<< HEAD
-#background h1 {
-=======
 .background h1 {
->>>>>>> c0b54596fffed9f791246cdff60686725f510349
     font-size: 4rem;
     padding-top: 20px;
     font-family: 'Averia Serif Libre', cursive;
@@ -48,35 +44,6 @@ body {
     height: auto;
     width: 20%;
     float: left;
-<<<<<<< HEAD
-}
-
-#rules {
-    text-align: left;
-    float: right;
-    width: 75%;
-    font-size: 1.5rem;
-    line-height: 2em;
-}
-
-.lotrItal {
-    font-style: italic;
-    font-weight: bold;
-}
-
-#welcome {
-    clear: both;
-    font-size: 2.5rem;
-    line-height: 2em;
-}
-
-#start {
-    text-align: center;
-}
-
-#start button,
-#done button
-=======
 }
 
 #rules {
@@ -106,7 +73,6 @@ body {
 #done button,
 #reStart button,
 #tryAgain button
->>>>>>> c0b54596fffed9f791246cdff60686725f510349
  {
     background-color: #9e8ff0;
     color: white;
