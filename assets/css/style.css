@@ -8,11 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-#backGround {
-=======
 .backGround {
->>>>>>> c0b54596fffed9f791246cdff60686725f510349
     background-color: #d2e0f9;
     width: 80%;
     height:auto; 
@@ -85,30 +81,6 @@ body {
 
 .button {
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-}
-
-#playGround {
-    background-color: #d2e0f9;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: left;
-    padding-left: 10px;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-}
-
-#playGround h4 {
-    font-weight: bold;
-}
-
-
-
-#done {
-    text-align: center;
-}
-
-=======
 }
 
 .playGround {
@@ -203,6 +175,5 @@ body {
         width: 75%;
     }
     }
->>>>>>> c0b54596fffed9f791246cdff60686725f510349
 
 
