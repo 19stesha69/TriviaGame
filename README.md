@@ -10,7 +10,15 @@ All of the game's content is contained on one html page, with divs hidden and sh
 
 The app opens with a welcome page. 
 ![](/assets/screenshots/welcome.png)
-When the user presses the button labeled **Enter!**, the page presents the 8 multiple-choice trivia questions, and the timer begins to countdown from 60. Answers are chosen via radio button. If the user answers all 8 questions before the time is up, they need to push the **DONE!** button to see how many questions they answered correctly. If the user got 5 or more questions correct, the page changes to show an image of Lord Elrond and the number of questions answered correctly. If the user gets 4 or fewer questions correct, then the page shows an image of the ringwraiths and the number of wrong and right questions. If the timer runs out before all of the questions are answered, then the page shows an image of Gandalf. All ending pages offer the player the opportunity to start over from the beginning by pressing a labeled button. All of these buttons take the user back to the welcome page.
+When the user presses the button labeled **Enter!**, the page presents the 8 multiple-choice trivia questions, and the timer begins to countdown from 60.
+![](/assets/screenshots/trivia.png)
+Answers are chosen via radio button. If the user answers all 8 questions before the time is up, they need to push the **DONE!** button to see how many questions they answered correctly. If the user got 5 or more questions correct, the page changes to show an image of Lord Elrond and the number of questions answered correctly.
+![](assets/screenshots/win.png)
+If the user gets 4 or fewer questions correct, then the page shows an image of the ringwraiths and the number of wrong and right questions.
+![](/assets/screenshots/lose.png)
+If the timer runs out before all of the questions are answered, then the page shows an image of Gandalf.
+![](/assets/screenshots/timed_out.png)
+All ending pages offer the player the opportunity to start over from the beginning by pressing a labeled button. All of these buttons take the user back to the welcome page.
 
 # Link
 https://19stesha69.github.io/TriviaGame/
