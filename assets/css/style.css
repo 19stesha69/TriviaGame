@@ -8,7 +8,11 @@ body {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 #backGround {
+=======
+.backGround {
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
     background-color: #d2e0f9;
     width: 80%;
     height:auto; 
@@ -18,7 +22,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+<<<<<<< HEAD
 #background h1 {
+=======
+.background h1 {
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
     font-size: 4rem;
     padding-top: 20px;
     font-family: 'Averia Serif Libre', cursive;
@@ -40,6 +48,7 @@ body {
     height: auto;
     width: 20%;
     float: left;
+<<<<<<< HEAD
 }
 
 #rules {
@@ -67,6 +76,37 @@ body {
 
 #start button,
 #done button
+=======
+}
+
+#rules {
+    text-align: left;
+    float: right;
+    width: 75%;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+.lotrItal {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#welcome {
+    clear: both;
+    font-size: 2.5rem;
+    line-height: 2em;
+}
+
+#start {
+    text-align: center;
+}
+
+#start button,
+#done button,
+#reStart button,
+#tryAgain button
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
  {
     background-color: #9e8ff0;
     color: white;
@@ -79,6 +119,7 @@ body {
 
 .button {
     font-family: 'Raleway', sans-serif;
+<<<<<<< HEAD
 }
 
 #playGround {
@@ -101,5 +142,101 @@ body {
     text-align: center;
 }
 
+=======
+}
+
+.playGround {
+    background-color: #d2e0f9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.playGround h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.playGround h4 {
+    font-weight: bold;
+}
+
+.oops {
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.oops h2 {
+    font-size: 2rem;
+}
+
+.oops p {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+#done {
+    text-align: center;
+}
+
+.finished {
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.finished h2 {
+    font-size: 2rem;
+}
+
+.finished h3 {
+    font-size: 1.75rem;
+}
+
+.finished p {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+#gameWellPlayed h2 {
+    font-size: 2rem;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#elrondImage {
+    margin: 20px;
+}
+
+#ringwraithsImage {
+    margin: 20px;
+}
+
+/* iPads (portrait) ----------- */
+@media screen and (max-width : 768px) {
+
+    #gladdy {
+        float: none;
+        width: 35%;
+    }
+
+    #rules {
+        float: none;
+        margin: auto;
+    }
+
+    #elrondImage,
+    #ringwraithsImage,
+    #gandalfImage {
+        height: auto;
+        width: 75%;
+    }
+    }
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
 
 

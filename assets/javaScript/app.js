@@ -3,16 +3,33 @@ $(document).ready(function() {
     //variables
     var rightAnswers = 0; //Number of questions answered correctly
     var wrongAnswers = 0; //Number of questions answered incorrectly
+    var time= 60;         //Number of seconds to be counted down during quiz
+    var stopTime;         //Timer variable
 
-    $("#playGround").hide();
-    $("#finished").hide();
+    $(".playGround").hide();
+    $(".finished").hide();
+    $(".oops").hide();
 
     
     //Function that opens the game
     var playGame = function() {
-        console.log(1 + 2);
         $(".titleContainer").hide();
-        $("#playGround").show();
+        $(".oops").hide();
+        $(".playGround").show();
+        timer();
+    }
+
+    //Function that runs the timer
+    var timer = function() {
+        stopTime = setTimeout(timer, 1000);
+        $("#countDown").html(time);
+
+        if (time == -1) {
+            $(".playGround").hide();
+            $(".oops").show();
+        }
+
+        time--;
     }
 
     //Function that tallies up the right and wrong answers
@@ -33,8 +50,8 @@ $(document).ready(function() {
 
     //function that finsihes the game
     var gameDone = function () {
-        $("#playGround").hide();
-        $("#finished").show();
+        $(".playGround").hide();
+        $(".finished").show();
         $("#rightNum").html(rightAnswers);
         $("#wrongNum").html(wrongAnswers);
         wellPlayed();
@@ -59,7 +76,24 @@ $(document).ready(function() {
     whatAreTheAnswers();
 
     //Finish the game and see the score
-    $('#done').click(gameDone);
+    $('#done').click(function() {
+        clearTimeout(stopTime);
+        gameDone();
+    });
+
+   //Restarts the game after the time runs out
+
+   $("#reStart").click(function() {
+        location.reload();
+    });
+
+    //Restarts game from .finished div
+    
+    $("#tryAgain").click(function() {
+        location.reload();
+    });
+
+
 
    
 

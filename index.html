@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
+<<<<<<< HEAD
         <div id="backGround"> <!--Constant elements-->
 
             <h1>Lord of the Rings Trivia</h1>
@@ -38,8 +39,44 @@
                     <button class="button" type="button">ENTER!</button> <!--Start Button-->  
                 </div>
             </div>
+=======
 
-            <div id="playGround">  <!--Div containing the quiz-->
+        <!--link to Portfolio  https://19stesha69.github.io/Responsive-Portfolio/index.html  -->
+
+        
+        <div class="backGround"> <!--Container for all on screen elements-->
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
+
+            <h1>Lord of the Rings Trivia Game</h1>
+
+            <div class="titleContainer"> <!--Div containing landing page content-->
+                <div class="titlePage">
+                    <h2>Mae govannen, mellon nín!</h2>
+                    <br><br>
+                    
+                    <img id="gladdy" src="assets/images/galadriel.gif" alt="Galadriel">
+                    
+                    <br><br>
+                    <div id="rules">
+                        <p>Awaiting are 8 questions that will test your knowledge of J.R.R. Tolkien's <span class="lotrItal">The Lord of 
+                            the Rings</span> (as presented in Peter Jackson's adaptation). Answer the questions correctly, 
+                            in the allotted time, and you will be rewarded. Should you fail, however, you will bring about 
+                            the <span class="lotrItal">ruin of all!</span></p>
+                            <br><br>
+                    </div>
+
+                    <p id="welcome">Welcome friend, and...</p>
+
+                </div>
+
+                <div id="start">
+                    <button class="button" type="button">ENTER!</button> <!--Start Button-->  
+                </div>
+            </div>
+
+            <div class="playGround">  <!--Div containing the quiz-->
+
+                <h3>Time Remaining: <span id="countDown"></span> seconds</h3>
 
                 <h4>1. Who's the youngest Hobbit in the Fellowship?</h4>
                 <br>
@@ -107,9 +144,13 @@
                 <input id="quest" name="quest7" value ="correct" type="radio">The One Ring&trade;
                 <input id="quest" name="quest7" value ="incorrect" type="radio">His cares and worries
                 <input id="quest" name="quest7" value="incorrect" type="radio">Lobelia Sackville-Baggins
+<<<<<<< HEAD
                 <input id="quest" name="quest7" value="incorrect" type="radio">The three dwarves who are mentioned as 
                                                                    staying at Bag End in the book but were left out of 
                                                                    the movie.
+=======
+                <input id="quest" name="quest7" value="incorrect" type="radio">His walking stick
+>>>>>>> c0b54596fffed9f791246cdff60686725f510349
 
                 <br><br>
 
@@ -128,13 +169,28 @@
 
             </div>    
 
-            <div id="finished">   <!--Page that shows final score-->
+            <div class="oops"> <!--Content that appears when time is up-->
+                <h2>Oh dear!</h2>
+                <br>
+                <p>Looks like a trip to the library of Minas Tirith is in order.</p>
+                <br>
+                <img id ="gandalfImage" src="assets/images/library.jpg" alt="Gandalf reading in the library at Minas Tirith">
+                <p>Would you like to try again?</p>
+                <div id="reStart">
+                    <button class="button" type="button">Yes!</button> <!--Start Button-->  
+                </div>
+            </div>
+
+            <div class="finished">   <!--Page that shows final score-->
                 <h2>All Done!</h2><br>
                 <h3>How well did you do?</h3><br>
-                <p id="right">Correct Answers:<span id="rightNum"></span></p><br>
-                <p id="wrong">Wrong Answers:<span id="wrongNum"></span></p><br>
+                <p id="right">Correct Answers: <span id="rightNum"></span></p><br>
+                <p id="wrong">Wrong Answers: <span id="wrongNum"></span></p><br>
                 <div id="gameWellPlayed"></div>
                 <div id="endGameImage"></div>
+                <div id="tryAgain">
+                    <button class="button" type="button">Wanna try again?</button>   
+                </div>
             </div>
 
         </div>    
