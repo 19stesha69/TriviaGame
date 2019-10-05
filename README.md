@@ -21,4 +21,4 @@ If the timer runs out before all of the questions are answered, then the page sh
 All ending pages offer the player the opportunity to start over from the beginning by pressing a labeled button. All of these buttons take the user back to the welcome page.
 
 # Link
-https://19stesha69.github.io/TriviaGame/
+https://steeshmck.github.io/TriviaGame/
