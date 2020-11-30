@@ -58,7 +58,7 @@ $(document).ready(function() {
     }
 
     var wellPlayed = function() {
-        if (rightAnswers > 5) {
+        if (rightAnswers >= 5) {
             $('#gameWellPlayed').html("<h2>WELCOME TO RIVENDELL!</h2>");
             $('#endGameImage').append("<img id='elrondImage' src='assets/images/elrond.jpg'>"); 
         } else {

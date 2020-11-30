@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-.backGround {
+#backGround {
     background-color: #d2e0f9;
     width: 80%;
     height:auto; 
@@ -18,7 +18,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.background h1 {
+#background h1 {
     font-size: 4rem;
     padding-top: 20px;
     font-family: 'Averia Serif Libre', cursive;
