@@ -2,6 +2,8 @@
 
 This game gives the player 60 seconds to answer 8 trivia questions based on Peter Jackson's adapation of J.R.R. Tolkien's **The Lord of the Rings**.
 
+Play the game here => [https://steeshmck.github.io/Lord-of-the-Rings-Trivia-Game/](https://steeshmck.github.io/Lord-of-the-Rings-Trivia-Game/)
+
 # Overview
 
 All of the game's content is contained on one html page, with divs hidden and shown, via jQuery, when required by game play. The code that operates the game is written in a modular fashion, making the path of the code easy to follow.
@@ -19,6 +21,3 @@ If the user gets 4 or fewer questions correct, then the page shows an image of t
 If the timer runs out before all of the questions are answered, then the page shows an image of Gandalf.
 ![](/assets/screenshots/timed_out.png)
 All ending pages offer the player the opportunity to start over from the beginning by pressing a labeled button. All of these buttons take the user back to the welcome page.
-
-# Link
-https://steeshmck.github.io/TriviaGame/
